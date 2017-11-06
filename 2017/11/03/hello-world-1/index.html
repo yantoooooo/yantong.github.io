@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="实用，效率," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="我好帅哦！">
+<meta name="description" content="Wish you have a good day！          这款为天猫定制的 iPhone，你买了吗？由于没摸过真机，所以严格意义上来说，这篇文章应该有一个更加接地气的名字：“模拟器适配实战”…">
+<meta name="keywords" content="实用，效率">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一次的博客">
+<meta property="og:title" content="Iphone adaptation">
 <meta property="og:url" content="http://yoursite.com/2017/11/03/hello-world-1/index.html">
 <meta property="og:site_name" content="Yantong">
-<meta property="og:description" content="我好帅哦！">
+<meta property="og:description" content="Wish you have a good day！          这款为天猫定制的 iPhone，你买了吗？由于没摸过真机，所以严格意义上来说，这篇文章应该有一个更加接地气的名字：“模拟器适配实战”…">
 <meta property="og:image" content="http://oyzino844.bkt.clouddn.com/banner.jpg">
-<meta property="og:updated_time" content="2017-11-06T07:33:04.932Z">
+<meta property="og:updated_time" content="2017-11-06T12:02:38.813Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一次的博客">
-<meta name="twitter:description" content="我好帅哦！">
+<meta name="twitter:title" content="Iphone adaptation">
+<meta name="twitter:description" content="Wish you have a good day！          这款为天猫定制的 iPhone，你买了吗？由于没摸过真机，所以严格意义上来说，这篇文章应该有一个更加接地气的名字：“模拟器适配实战”…">
 <meta name="twitter:image" content="http://oyzino844.bkt.clouddn.com/banner.jpg">
 
 
@@ -126,7 +127,7 @@
 
 
 
-  <title>第一次的博客 | Yantong</title>
+  <title>Iphone adaptation | Yantong</title>
   
 
 
@@ -236,7 +237,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/03/hello-world-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Yan tong">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="http://oyzino844.bkt.clouddn.com/touxiang.jpg">
     </span>
@@ -250,7 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">第一次的博客</h1>
+          <h1 class="post-title" itemprop="name headline">Iphone adaptation</h1>
         
 
         <div class="post-meta">
@@ -273,6 +274,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/design/" itemprop="url" rel="index">
+                    <span itemprop="name">design</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -280,7 +303,7 @@
 
           
           
-             <span id="/2017/11/03/hello-world-1/" class="leancloud_visitors" data-flag-title="第一次的博客">
+             <span id="/2017/11/03/hello-world-1/" class="leancloud_visitors" data-flag-title="Iphone adaptation">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -311,10 +334,47 @@
       
 
       
-        <p style="text-align: center;">我好帅哦！</p>
+        <p style="text-align: center;">Wish you have a good day！</p>
 
 
 <div><br>    <img src="http://oyzino844.bkt.clouddn.com/banner.jpg"><br></div>
+
+
+<p>这款为天猫定制的 iPhone，你买了吗？由于没摸过真机，所以严格意义上来说，这篇文章应该有一个更加接地气的名字：“模拟器适配实战”…</p>
+<a id="more"></a>
+<p>01.适配原则</p>
+<p>由于这篇文章是实战，就不巴拉巴拉说适配思想和安全区域的概念了，不懂的可以去看苹果官方的 《为 iPhone X 更新您的 app》。</p>
+<p>上面那篇文章是中文版，而且下面还有三个带中文字幕的视频，从设计、编码和原理三个角度告诉你怎么样是适配 iPhone X。注意，Designing for iPhone X 这个视频，一般的设计师是看不懂的，所以这个视频虽说是设计知识，但是其实是给开发人员看的。所以最好是我们开发人员看了讲给 UI 设计师听，告诉他们怎么适配。</p>
+<p>Designing for iPhone X (简体中文字幕)<br>Building Apps for iPhone X (简体中文字幕)<br>Updating Your App for iOS 11 (简体中文字幕)</p>
+<p>02.启动页适配</p>
+<p>如果你是第一次下载 Xcode 9，运行起来，APP 并没有完全填充整个模拟器，这时你需要 UI 设计师给你切一张新的启动图，图片尺寸应该和 iPhone X 一样，iPhone X 的屏幕尺寸为 375 * 812 pt，记得 iPhone X 的屏幕是 @3x 的。</p>
+<p>这里还有一个细节，拿到这张 iPhone X 启动图以后在你的项目里找到 Assets.xcassets 里的 LaunchImage，但是并没有放 iPhone X 启动图的位置，此时，你应该先把之前的启动图复制一份，然后将旧的 LaunchImage 删除，然后右键重新建立一个 LaunchImage，此时，你就可以看到 iPhone X 启动图的位置了。</p>
+<p>03.启动页广告设计</p>
+<p>之前所有的广告页面设计都是按照 iPhone 6s 的屏幕标准来设计的，这在没有 iPhone X 的时代是没有问题的。现在有了 iPhone X，它的屏幕比例不是 16 ：9，所以这个广告页面放到 iPhone X 上就会出现左右被裁掉。但是如果按照 iPhone X 的屏幕来设计，就会导致在非 iPhone X 上显示出现上下被截掉的情况。</p>
+<p>因此我们采取的方法是，仍然使用 iPhone 6s 的屏幕来进行设计，只是设计师注意在左右留出一部分距离，保证在 iPhone X 上显示把左右裁掉一部分以后依然能够正常显示。</p>
+<p>04.safeAreaInsets 使用的坑</p>
+<p>我们公司的项目的绝大部分界面都是用代码写的，没有使用 SB 或者 xib，而且旧代码布局没有规范，并没有写在 -viewWillLayoutSubviews: 中。</p>
+<p>上面的官方示例代码也告诉我们要相对 safeAreaInsets 进行布局，确保我们的界面是用户(老板)友好的。但是这个属性在 -viewDidLoad:，-viewWillAppear: 方法中都是为 UIEdgeInsetsZreo，第一次有值是 -viewWillLayoutSubviews:。而且这个值在 -viewWillLayoutSubviews: 的几次调用中会不停地修正。</p>
+<p>其实文档里有写这个属性的注释：<br>If the view is not currently installed in a view hierarchy, or is not yet visible onscreen, the edge insets in this property are 0. 假如当前 view 没有布局到窗口的中，这个值就是 0。</p>
+<p>这给我们修改旧代码带来极大的不便，我们不太可能把旧代码写在 -viewDidLoad: 中的所有的布局代码都挪到 -viewWillLayoutSubviews: 中去，尤其对于全部是是手写布局的这种情况。</p>
+<p>所以我们需要一种更加灵活有效的方式，对于某个状态栏、导航栏和标签栏固定显示的界面，它的 statusBar 、navigationBar 和 tabBar 的 frame 都是一个的固定值。因为我们是在 -viewDidLoad: 中修改旧的布局，此时 -viewDidLoad: 中拿到的 safeAreaInsets 是无效的，但是我们就可以跳过 safeAreaInsets，直接使用 statusBar 、navigationBar 和 tabBar 的高度来求得安全区域，然后将我们的界面布局在我们自己用上面三个元素的高度构建的安全区域内。</p>
+<p>这样我们就可以以追求最小的代码改动为原则来适配 iPhone X。</p>
+<p>05.tableView 适配</p>
+<p>tableView 系统都帮我们适配好了，真的没什么可讲的。如果一定要讲就是有些界面我们需要把 tableView 的 contentInsetAdjustmentBehavior 这个属性给设置为 .never。当这样做以后，我们就无法享受系统自动优化 tableView 的一个便利，这个便利就是系统帮我们把 tableView 的内容上下都插入一个安全区域大小的额外滚动距离来使界面用户友好，因此我们需要手动插入 contentInsets 来保证这一点。</p>
+<p>06.横屏适配</p>
+<p>国内 iPhone 应用绝大多数都不支持横屏，当然也有例外，如果一个应用涉及到视频，不管是播放视频还是录制视频，大多数情况下都需要在某些界面小范围支持横屏。如果你有横屏的问题，可以参考我另外一篇文章，关于在只支持竖屏的应用中小范围支持横屏的一个实践：[iOS]终极横竖屏切换解决方案。</p>
+<p>我们的项目中也有横屏页面，是我们的直播页面。横屏适配的原则就是要让所有的元素都布局到安全区域内，此时我们是要依靠 safeAreaInsets 来确定底部的安全区域高度。如果你的项目中有横屏的 tableView，那你应该看一下上面的视频，视频里有详细的介绍苹果如何使 WWDC 这个应用在 iPhone X 上支持横屏。</p>
+<p>07.网页适配</p>
+<p>网页底部可能会有些需要交互的元素，如果不做任何处理就会被黑线挡住。由于旧网页设计的时候没有在底部留出对应的空隙，所以，我们只能用代码处理了。好在 UIWebView 有一个 scrollView 的属性，我们可以方便的给 UIWebView 在底部添加一个安全滚动距离，虽然对于有底色的网页，这种方案并不优雅，但是眼下也只能这样了。</p>
+<p>但是这只是过渡的方案，以后的 UI 设计上还是应该尽量照顾到 iPhone X，留出 34 的高度来保证用户体验。</p>
+<p>08.联动动画</p>
+<p>大家的项目里肯定少不了类似这样的动画。这个动画不容易，在 -scrollViewDidScroll: 里算各种参与动画的元素的 frame，然后计算动画触发临界位置，做完一次以后再也不想做第二次了。</p>
+<p>然后跑到 iPhone X 上一看，位置全错。没办法，只能重头来一次了呗，这又没有什么捷径可走，只能先将元素起始位置相对于安全区域布局好，然后再计算终点位置的布局，中间过渡不就很简单了吗？</p>
+<p>09.第三方库适配</p>
+<p>布局使用的 Masonry 已经支持相对安全区域布局。ASDK 也已经支持，只需要将 SDK 更新一下就可以了。</p>
+<p>我的文章集合</p>
+<p>下面这个链接是我所有文章的一个集合目录。这些文章凡是涉及实现的，每篇文章中都有 Github 地址，Github 上都有源码。如果某篇文章刚好在你的实际开发中帮到你，又或者提供一种不同的实现思路，让你觉得有用，那就看看这句话 “坚持每天点赞的人，99%都是帅哥美女，再也不用单身了”。</p>
+
       
     </div>
     
@@ -328,6 +388,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/实用，效率/" rel="tag"># 实用，效率</a>
+          
+        </div>
       
 
       
@@ -405,9 +471,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="http://oyzino844.bkt.clouddn.com/touxiang.jpg"
-                alt="John Doe" />
+                alt="Yan tong" />
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Yan tong</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -440,7 +506,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">Tags</span>
                 
               </div>
@@ -483,7 +549,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Yan tong</span>
 
   
 </div>
