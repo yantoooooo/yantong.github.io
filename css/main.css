@@ -1760,12 +1760,6 @@ pre .javascript .function {
   white-space: nowrap;
   text-align: center;
 }
-.site-state:first-child {
-  border-left: none;
-}
-.site-state a {
-  border-bottom: none;
-}
 .site-state-item {
   display: inline-block;
   padding: 0 15px;
@@ -1787,12 +1781,6 @@ pre .javascript .function {
 .site-state-item-name {
   font-size: 13px;
   color: inherit;
-}
-.site-state-item-name:first-child {
-  border-left: none;
-}
-.site-state-item-name a {
-  border-bottom: none;
 }
 .feed-link {
   margin-top: 20px;
@@ -1836,7 +1824,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bee4a4;
+  background: #4bffff;
 }
 .links-of-blogroll {
   font-size: 13px;
